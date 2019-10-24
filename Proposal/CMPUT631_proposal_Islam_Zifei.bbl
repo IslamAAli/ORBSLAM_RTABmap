@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{cadena2016past}
+C.~Cadena, L.~Carlone, H.~Carrillo, Y.~Latif, D.~Scaramuzza, J.~Neira, I.~Reid,
+  and J.~J. Leonard, ``Past, present, and future of simultaneous localization
+  and mapping: Toward the robust-perception age,'' {\em IEEE Transactions on
+  robotics}, vol.~32, no.~6, pp.~1309--1332, 2016.
+
+\bibitem{bresson2017simultaneous}
+G.~Bresson, Z.~Alsayed, L.~Yu, and S.~Glaser, ``Simultaneous localization and
+  mapping: A survey of current trends in autonomous driving,'' {\em IEEE
+  Transactions on Intelligent Vehicles}, vol.~2, no.~3, pp.~194--220, 2017.
+
+\bibitem{taketomi2017visual}
+T.~Taketomi, H.~Uchiyama, and S.~Ikeda, ``Visual slam algorithms: a survey from
+  2010 to 2016,'' {\em IPSJ Transactions on Computer Vision and Applications},
+  vol.~9, no.~1, p.~16, 2017.
+
+\bibitem{strasdat2012visual}
+H.~Strasdat, J.~M. Montiel, and A.~J. Davison, ``Visual slam: why filter?,''
+  {\em Image and Vision Computing}, vol.~30, no.~2, pp.~65--77, 2012.
+
+\bibitem{8710464}
+M.~{Filipenko} and I.~{Afanasyev}, ``Comparison of various slam systems for
+  mobile robot in an indoor environment,'' in {\em 2018 International
+  Conference on Intelligent Systems (IS)}, pp.~400--407, Sep. 2018.
+
+\end{thebibliography}

@@ -1,0 +1,80 @@
+% Encoding: UTF-8
+
+@InProceedings{8373411,
+  author    = {I. {Alaa} and A. {Wassal}},
+  title     = {VO-Sim: A generic framework for tuning and evaluating visual odometry systems},
+  booktitle = {2018 IEEE/ION Position, Location and Navigation Symposium (PLANS)},
+  year      = {2018},
+  pages     = {432-439},
+  month     = {April},
+  doi       = {10.1109/PLANS.2018.8373411},
+  keywords  = {computer vision;distance measurement;stereo image processing;VO-Sim;visual odometry systems tuning;VO algorithms;monocular VO engines;vision-based solutions;stereo VO systems;high-performance inexpensive cameras;generic framework;Pipelines;Feature extraction;Cameras;Tuning;Visual odometry;Testing;Engines},
+}
+
+@Article{bresson2017simultaneous,
+  author    = {Bresson, Guillaume and Alsayed, Zayed and Yu, Li and Glaser, S{\'e}bastien},
+  title     = {Simultaneous localization and mapping: A survey of current trends in autonomous driving},
+  journal   = {IEEE Transactions on Intelligent Vehicles},
+  year      = {2017},
+  volume    = {2},
+  number    = {3},
+  pages     = {194--220},
+  publisher = {IEEE},
+}
+
+@Article{taketomi2017visual,
+  author    = {Taketomi, Takafumi and Uchiyama, Hideaki and Ikeda, Sei},
+  title     = {Visual SLAM algorithms: a survey from 2010 to 2016},
+  journal   = {IPSJ Transactions on Computer Vision and Applications},
+  year      = {2017},
+  volume    = {9},
+  number    = {1},
+  pages     = {16},
+  publisher = {SpringerOpen},
+}
+
+@Article{cadena2016past,
+  author    = {Cadena, Cesar and Carlone, Luca and Carrillo, Henry and Latif, Yasir and Scaramuzza, Davide and Neira, Jos{\'e} and Reid, Ian and Leonard, John J},
+  title     = {Past, present, and future of simultaneous localization and mapping: Toward the robust-perception age},
+  journal   = {IEEE Transactions on robotics},
+  year      = {2016},
+  volume    = {32},
+  number    = {6},
+  pages     = {1309--1332},
+  publisher = {IEEE},
+}
+
+@Article{durrant2006simultaneous,
+  author    = {Durrant-Whyte, Hugh and Bailey, Tim},
+  title     = {Simultaneous localization and mapping: part I},
+  journal   = {IEEE robotics \& automation magazine},
+  year      = {2006},
+  volume    = {13},
+  number    = {2},
+  pages     = {99--110},
+  publisher = {IEEE},
+}
+
+@Article{strasdat2012visual,
+  author    = {Strasdat, Hauke and Montiel, Jos{\'e} MM and Davison, Andrew J},
+  title     = {Visual SLAM: why filter?},
+  journal   = {Image and Vision Computing},
+  year      = {2012},
+  volume    = {30},
+  number    = {2},
+  pages     = {65--77},
+  publisher = {Elsevier},
+}
+
+@InProceedings{8710464,
+  author    = {M. {Filipenko} and I. {Afanasyev}},
+  title     = {Comparison of Various SLAM Systems for Mobile Robot in an Indoor Environment},
+  booktitle = {2018 International Conference on Intelligent Systems (IS)},
+  year      = {2018},
+  pages     = {400-407},
+  month     = {Sep.},
+  doi       = {10.1109/IS.2018.8710464},
+  keywords  = {cameras;cartography;data acquisition;distance measurement;indoor environment;mobile robots;optical radar;sensors;SLAM (robots);stereo image processing;indoor environment;mobile robot trajectories;ROS-based SLAM systems;monocular stereo cameras;ZED stereo cameras;LSD SLAM;sensors;hector SLAM methods;monocular ORB SLAM methods;stereo RTAB map methods;2D lidar-based cartographer SLAM methods;GMapping;large scale direct monocular SLAM methods;direct sparse odometry;DSO;ZEDfu;real-time appearance-based mapping;stereo parallel tracking and mapping;S-PTAM;Simultaneous localization and mapping;Cameras;Laser radar;Two dimensional displays;Trajectory;simultaneous localization and mapping (SLAM);visual odometry;indoor navigation;ROS},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
