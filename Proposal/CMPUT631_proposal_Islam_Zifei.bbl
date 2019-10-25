@@ -20,6 +20,17 @@ T.~Taketomi, H.~Uchiyama, and S.~Ikeda, ``Visual slam algorithms: a survey from
 H.~Strasdat, J.~M. Montiel, and A.~J. Davison, ``Visual slam: why filter?,''
   {\em Image and Vision Computing}, vol.~30, no.~2, pp.~65--77, 2012.
 
+\bibitem{Geiger2012CVPR}
+A.~Geiger, P.~Lenz, and R.~Urtasun, ``Are we ready for autonomous driving? the
+  kitti vision benchmark suite,'' in {\em Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, 2012.
+
+\bibitem{sturm2012benchmark}
+J.~Sturm, N.~Engelhard, F.~Endres, W.~Burgard, and D.~Cremers, ``A benchmark
+  for the evaluation of rgb-d slam systems,'' in {\em 2012 IEEE/RSJ
+  International Conference on Intelligent Robots and Systems}, pp.~573--580,
+  IEEE, 2012.
+
 \bibitem{8710464}
 M.~{Filipenko} and I.~{Afanasyev}, ``Comparison of various slam systems for
   mobile robot in an indoor environment,'' in {\em 2018 International

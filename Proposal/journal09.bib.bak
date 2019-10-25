@@ -77,4 +77,11 @@
   keywords  = {cameras;cartography;data acquisition;distance measurement;indoor environment;mobile robots;optical radar;sensors;SLAM (robots);stereo image processing;indoor environment;mobile robot trajectories;ROS-based SLAM systems;monocular stereo cameras;ZED stereo cameras;LSD SLAM;sensors;hector SLAM methods;monocular ORB SLAM methods;stereo RTAB map methods;2D lidar-based cartographer SLAM methods;GMapping;large scale direct monocular SLAM methods;direct sparse odometry;DSO;ZEDfu;real-time appearance-based mapping;stereo parallel tracking and mapping;S-PTAM;Simultaneous localization and mapping;Cameras;Laser radar;Two dimensional displays;Trajectory;simultaneous localization and mapping (SLAM);visual odometry;indoor navigation;ROS},
 }
 
+@InProceedings{Geiger2012CVPR,
+  author    = {Andreas Geiger and Philip Lenz and Raquel Urtasun},
+  title     = {Are we ready for Autonomous Driving? The KITTI Vision Benchmark Suite},
+  booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2012},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
