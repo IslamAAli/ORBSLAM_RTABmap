@@ -21,14 +21,15 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{float}
-\usepackage[small]{titlesec}
+\usepackage[tiny]{titlesec}
+\usepackage{lastpage}
 
 
 \pagestyle{fancy}
 \fancyhf{}
-
+\rhead{Islam Ali \& Zifei Jiang}
 \lhead{CMPUT-631: Project Proposal}
-\rfoot{Page \thepage}
+\rfoot{Page \thepage\ of \pageref*{LastPage}}
 \lfoot{\scriptsize{}}
 
 
@@ -51,12 +52,12 @@
 \hrule
 \vspace{2pt}
 \section*{Abstract}
-
-
+SLAM (Simultaneous Localization and Mapping) became one of the main building blocks of any modern robotic system due to of the inevitable need for robust and reliable localization and mapping engine in the robotic perception subsystem. A number of trials have been done during the last few decades to provide reliable solutions but each suffered a downside in a certain domain or under certain environmental conditions. Two famous SLAM algorithms (namely RTAB-map and ORB-SLAM2) are considered the industry standard as they provide state-of-the-art performance. However, each suffer critical performance issues in some testing scenarios. In this work, we explore the possibility of enhancing the performance of RTAB-map by utilizing the depth information of ORB-SLAM2. The proposal starts by defining the problem in hand and by giving a quick background and literature review of the efforts exerted in this track. Then, the methodology and procedure are discussed thoroughly to provide a road map of the project activities. Finally, the proposal conclude by providing a mechanism for performance evaluation as well as discussing the significance of this work.
 \vspace{5pt}
 \hrule
 \vspace{10pt}
 \section{Problem Definition}
+Recently, modern autonomous robotic systems are playing a vital role in a wide spectrum of industrial and non-industrial applications. One problem that is related to such application is robot perception of the environment, as such how it models the environment and how it localize itself in it accurately and reliably. To answer these questions, SLAM was introduces a few decades ago as a method for simultaneous localization and mapping. Two of the major advancements in this field was introduced by the introduction of two state-of-the-art algorithms which are \textit{RTAB-map} \cite{labbe2019rtab} and \textit{ORB-SLAM} with its two versions \cite{mur2015orb}\cite{mur2017orb}.
 \section{Background}
 \indent \textbf{SLAM (Simultaneous Localization and Mapping)} is the process of generating a model of the environment (a map) and localizing the camera inside it \cite{cadena2016past}. By localization we refer to the estimation of the 6DoF of the moving camera (orientation and position). Many sensors are used in SLAM such as LiDARs, Cameras, and Radars \cite{bresson2017simultaneous}. In this work, we focus on the usage of vision-based SLAM and possibly its integration with Laser-based SLAM.
 

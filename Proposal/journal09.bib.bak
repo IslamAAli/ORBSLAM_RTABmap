@@ -84,4 +84,35 @@
   year      = {2012},
 }
 
+@InProceedings{sturm2012benchmark,
+  author       = {Sturm, J{\"u}rgen and Engelhard, Nikolas and Endres, Felix and Burgard, Wolfram and Cremers, Daniel},
+  title        = {A benchmark for the evaluation of RGB-D SLAM systems},
+  booktitle    = {2012 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  year         = {2012},
+  pages        = {573--580},
+  organization = {IEEE},
+}
+
+@Article{labbe2019rtab,
+  author    = {Labb{\'e}, Mathieu and Michaud, Fran{\c{c}}ois},
+  title     = {RTAB-Map as an open-source lidar and visual simultaneous localization and mapping library for large-scale and long-term online operation},
+  journal   = {Journal of Field Robotics},
+  year      = {2019},
+  volume    = {36},
+  number    = {2},
+  pages     = {416--446},
+  publisher = {Wiley Online Library},
+}
+
+@Article{mur2015orb,
+  author    = {Mur-Artal, Raul and Montiel, Jose Maria Martinez and Tardos, Juan D},
+  title     = {ORB-SLAM: a versatile and accurate monocular SLAM system},
+  journal   = {IEEE transactions on robotics},
+  year      = {2015},
+  volume    = {31},
+  number    = {5},
+  pages     = {1147--1163},
+  publisher = {IEEE},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
