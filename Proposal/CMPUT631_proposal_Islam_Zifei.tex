@@ -23,7 +23,7 @@
 \usepackage{float}
 \usepackage[tiny]{titlesec}
 \usepackage{lastpage}
-
+\usepackage{booktabs}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -69,13 +69,37 @@ The conventional pipeline of SLAM consists of two major stages, the first one is
 On the contrary, direct feature-less methods are usually used on images directly without any abstraction \cite{taketomi2017visual} in order to achieve real-time operation and eliminating the accumulated error usually occurring in the aforementioned feature-based methods. Direct methods differ, mainly, in the density of the map and can be categorized based on that to either dense, semi-dense, or sparse methods \cite{taketomi2017visual}. Methods such as DTAM and LSD-SLAM are examples of the trials done to achieve direct SLAM by means of dense and semi-dense maps while other methods such as SVO and DVO are more advanced steps towards fully direct SLAM algorithms utilizing spare maps \cite{cadena2016past}\cite{taketomi2017visual}.
 
 \subsection{RTAB-Map}
+RTAB-Map, (Real-Time Appearance-Based Mapping), is an open source Graph-Based SLAM system. RTAB-Map recently has been used as a platform to comparing various of SLAM algorithms due to its deep integration with ROS \cite{labbe2019rtab}. Based on ROS, developers are able to modify and extend the system easily. In the mean time, RTAB-Map provide two classic visual
+odometry algorithms Frame-To-Map(F2M) and Frame-To-Frame(F2F) \cite{Fraundorfer2012}. F2F method registers the new frame against last frame while F2M registers the new frame against a local map features created from past key frames. The mapping process of RTAB-Map is separated from odometry part and to reduce the calculation burden. RTAB-Map create Point Cloud using the depth image directly without any optimization. 
+
 \subsection{ORB-SLAM 1 \& 2}
+ORB-SLAM 1 is a monocular SLAM system proposed in 2015 \cite{mur2015orb}. It use ORB features for all nodes in the SLAM system such as tracking, mapping, relocalization and loop closing. ORB features provide high calculation efficiency to enable the real time operation in large environment. Based on ORB-SLAM 1, ORB-SLAM 2 is developed to work with RGBD and stereo camera.  ORB-SLAM 2 has three main parallel threads: tracking, local mapping and loop closing. Since ORB-SLAM 2 optimize both state of the camera and key points in the map, it achieves the state-of-art in accuracy in SLAM systems. 
+
 \subsection{RTAB-Map vs. ORB-SLAM 2}
-A number of trials have been made to evaluate the performance of SLAM algorithms (specially RTAB-map and ORB-SLAM 1\&2)  utilizing unified test procedures.
+A number of trials have been made to evaluate the performance of SLAM algorithms (specially RTAB-map and ORB-SLAM 1\&2)  utilizing unified test procedures. 
+
 \section{Research Methodology and Procedure}
 \subsection{Baseline Evaluation}
+The baseline is the accuracy of RTAB-Map and ORB-SLAM2 on KITTI and TUM datasets. Table \ref{tab:my-table} present some results from multiple papers. The time measurement depends on the computer configurations, thus we will measure the time again on our own configurations. 
+\begin{table}[]
+    \centering
+    \begin{tabular}{@{}ccccccccccccc@{}}
+    \toprule
+    Odometry  & \multicolumn{10}{c}{KITTI Sequence}                         &     & time(msec)   \\
+              & 00  & 01   & 02  & 03  & 04  & 05   & 06  & 07  & 08  & 09  & 10  &     \\ \midrule
+    F2F       & 1.4 & 14.5 & 4.7 & 0.4 & 0.2 & 0.72 & 1.8 & 0.6 & 5.8 & 2.2 & 3.0 & 61  \\ \midrule
+    F2M       & 1.0 & 4.7  & 4.7 & 0.3 & 0.2 & 0.5  & 0.8 & 0.5 & 3.8 & 2.8 & 0.8 & 82  \\ \midrule
+    ORB-RTAB  & 1.0 & 5.3  & 4.4 & 0.2 & 0.2 & 0.5  & 0.6 & 0.5 & 3.0 & 1.5 & 0.9 & 175 \\ \midrule
+    ORB-SLAM2 & 1.3 & 10.4 & 5.7 & 0.6 & 0.2 & 0.8  & 0.8 & 0.5 & 3.6 & 3.2 & 1.0 & -   \\ \bottomrule
+    \end{tabular}
+    \caption{Table 1. Baseline for KITTI Dataset}
+    \label{tab:my-table}
+    \end{table}
+
 \subsection{Depth Information Generation from ORB-SLAM2}
+
 \subsection{Data Synchronization}
+
 \subsection{System Validation}
 In order to have a unified procedure for evaluating the system performance, publicly available datasets with ground truth are utilized to. The datasets were selected so that they can exploit the system boundaries in a wide spectrum of scenarios and conditions. For that purpose, KITTI dataset \cite{Geiger2012CVPR} was selected to cover scenarios in outdoor conditions with random moving objects, and TUM RGB-D dataset \cite{sturm2012benchmark} was selected to cover more static and indoor environment conditions.
 
