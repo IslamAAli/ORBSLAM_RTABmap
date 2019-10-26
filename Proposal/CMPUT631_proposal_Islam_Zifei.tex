@@ -99,7 +99,7 @@ The baseline is the accuracy of RTAB-Map and ORB-SLAM2 on KITTI and TUM datasets
 \subsection{Depth Information Generation from ORB-SLAM2}
 RTAB-Map team incorporate ORB-SLAM2 by using ORB-SLAM2 as a odometry input, and disabling loop closing and full bundle adjustment of ORB-SLAM2\cite{labbe2019rtab}. Local bundle adjustment of ORB-SLAM2 is still working, which make the modified ORB-SLAM2 similar to F2M. 
 
-Because ORB-SLAM2 optimize the feature points in the map, it can provide us with more accurate depth information for the feature points\cite{mur2017orb}. In our project, we will utilize depth information after optimization, to perform a more accurate odometry estimation.
+Because ORB-SLAM2 optimize the feature points in the map, it can provide us with more accurate depth information for the feature points\cite{mur2017orb} in keyframes and more accurate transformation between different camera poses. In our project, we will utilize depth information after optimization, to perform a more accurate odometry estimation.
 
 The RTAB-Map is a Motion-Only Bundle Adjustment, it optimize camera pose by minimizing the reprojection error between matched 3D points in the world coordinate and the observation of camera:
 $$
