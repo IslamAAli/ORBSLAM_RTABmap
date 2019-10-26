@@ -107,7 +107,7 @@ $$
 $$ 
 In ORB-SLAM2, the system optimize the depth information of feature points in keyframes by utilizing keypoints observation in all frames\cite{mur2017orb}:
 $$
-\{\mathbf{X^i,R_l,t_l}\}= \argmin_{\mathbf{X^i,R_l,t_l}}\sum_{k\in\mathcal{K}_L\cup\mathcal{K}_F} \sum_{i\in\mathcal{X_k}}\rho(||x^j-\pi(\mathbf{R_kX^j+t_k})||^2) 
+\{\mathbf{X^i,R_l,t_l}\}= \argmin_{\mathbf{X^i,R_l,t_l}}\sum_{k\in\mathcal{K}_L\cup\mathcal{K}_F} \sum_{i\in\mathcal{X}_k}\rho(||x^j-\pi(\mathbf{R_kX^j+t_k})||^2) 
 $$ 
 
 Comparing to the implementation of Labb{\'e} et. al\cite{labbe2019rtab}, we will utilize optimized keyframe further from ORB-SLAM2, to gain a better accuracy in both trajectory and point cloud map. 
