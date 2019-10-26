@@ -97,9 +97,20 @@ The baseline is the accuracy of RTAB-Map and ORB-SLAM2 on KITTI and TUM datasets
     \end{table}
 
 \subsection{Depth Information Generation from ORB-SLAM2}
-RTAB-Map team incorporate ORB-SLAM2 by using ORB-SLAM2 as a odometry input, and disabling loop closing and full bundle adjustment of ORB-SLAM2. Local bundle adjustment of ORB-SLAM2 is still working, which make the modified ORB-SLAM2 similar to F2M. 
+RTAB-Map team incorporate ORB-SLAM2 by using ORB-SLAM2 as a odometry input, and disabling loop closing and full bundle adjustment of ORB-SLAM2\cite{labbe2019rtab}. Local bundle adjustment of ORB-SLAM2 is still working, which make the modified ORB-SLAM2 similar to F2M. 
 
-Because ORB-SLAM2 optimize the feature points in the map, it can provide us with more accurate depth information for the feature points. In our project, we will utilize depth information after optimization, to perform a more accurate odometry estimation.
+Because ORB-SLAM2 optimize the feature points in the map, it can provide us with more accurate depth information for the feature points\cite{mur2017orb}. In our project, we will utilize depth information after optimization, to perform a more accurate odometry estimation.
+
+The RTAB-Map is a Motion-Only Bundle Adjustment, it optimize camera pose by minimizing the reprojection error between matched 3D points in the world coordinate and the observation of camera:
+$$
+\{\mathbf{R,t}\}= \argmin_{\mathbf{R,t}}\sum_{i\in\mathcal{X}}\rho(||x^i-\pi(\mathbf{RX^i+t})||^2) 
+$$ 
+In ORB-SLAM2, the system optimize the depth information of feature points in keyframes by utilizing keypoints observation in all frames\cite{mur2017orb}:
+$$
+\{\mathbf{X^i,R_l,t_l}\}= \argmin_{\mathbf{X^i,R_l,t_l}}\sum_{k\in\mathcal{K}_L\cup\mathcal{K}_F} \sum_{i\in\mathcal{X_k}}\rho(||x^j-\pi(\mathbf{R_kX^j+t_k})||^2) 
+$$ 
+
+Comparing to the implementation of Labb{\'e} et. al\cite{labbe2019rtab}, we will utilize optimized keyframe further from ORB-SLAM2, to gain a better accuracy in both trajectory and point cloud map. 
 
 \subsection{System Validation}
 In order to have a unified procedure for evaluating the system performance, publicly available datasets with ground truth are utilized to. The datasets were selected so that they can exploit the system boundaries in a wide spectrum of scenarios and conditions. For that purpose, KITTI dataset \cite{Geiger2012CVPR} was selected to cover scenarios in outdoor conditions with random moving objects, and TUM RGB-D dataset \cite{sturm2012benchmark} was selected to cover more static and indoor environment conditions.
