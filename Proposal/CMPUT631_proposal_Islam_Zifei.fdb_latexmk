@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex CMPUT631_proposal_Islam_Zifei"] 1572115691 "CMPUT631_proposal_Islam_Zifei.aux" "CMPUT631_proposal_Islam_Zifei.bbl" "CMPUT631_proposal_Islam_Zifei" 1572115691
+["bibtex CMPUT631_proposal_Islam_Zifei"] 1572117210 "CMPUT631_proposal_Islam_Zifei.aux" "CMPUT631_proposal_Islam_Zifei.bbl" "CMPUT631_proposal_Islam_Zifei" 1572117211
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "CMPUT631_proposal_Islam_Zifei.aux" 1572115691 3497 d6023600d6fe086606452c7e4f6c9363 ""
+  "CMPUT631_proposal_Islam_Zifei.aux" 1572117211 3394 c0a87232d9257cb147e28024ca458e94 ""
   "CMPUT631_proposal_Islam_Zifei.bcf" 0 -1 0 ""
   "journal09.bib" 1572048655 6577 05c1ea7c3244093c4ba996fb114a06cf ""
   (generated)
   "CMPUT631_proposal_Islam_Zifei.bbl"
   "CMPUT631_proposal_Islam_Zifei.blg"
-["pdflatex"] 1572115691 "/home/zifei/ORBSLAM_RTABmap/Proposal/CMPUT631_proposal_Islam_Zifei.tex" "/home/zifei/ORBSLAM_RTABmap/Proposal/CMPUT631_proposal_Islam_Zifei.pdf" "CMPUT631_proposal_Islam_Zifei" 1572115691
+["pdflatex"] 1572117211 "/home/zifei/ORBSLAM_RTABmap/Proposal/CMPUT631_proposal_Islam_Zifei.tex" "/home/zifei/ORBSLAM_RTABmap/Proposal/CMPUT631_proposal_Islam_Zifei.pdf" "CMPUT631_proposal_Islam_Zifei" 1572117211
   "/etc/texmf/web2c/texmf.cnf" 1534699740 1101 af7716885e081ab43982cab7b4672c1a ""
-  "/home/zifei/ORBSLAM_RTABmap/Proposal/CMPUT631_proposal_Islam_Zifei.aux" 1572115691 3497 d6023600d6fe086606452c7e4f6c9363 ""
-  "/home/zifei/ORBSLAM_RTABmap/Proposal/CMPUT631_proposal_Islam_Zifei.tex" 1572115689 11297 72a34558d06fdcb6392af0938120bb94 ""
+  "/home/zifei/ORBSLAM_RTABmap/Proposal/CMPUT631_proposal_Islam_Zifei.aux" 1572117211 3394 c0a87232d9257cb147e28024ca458e94 ""
+  "/home/zifei/ORBSLAM_RTABmap/Proposal/CMPUT631_proposal_Islam_Zifei.tex" 1572117209 11768 85d322a8f04ac9848c79289c8ef180c8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -217,14 +217,14 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1503343927 31343 93828589fb0cea665e553ee5a17ad2d4 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1534699746 1863403 f3ff9a4253bcb5fb9a9baaf0c572cb01 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1569291895 3855679 01cf0b2838db829e55c9cae4f9c1b515 ""
-  "CMPUT631_proposal_Islam_Zifei.aux" 1572115691 3497 d6023600d6fe086606452c7e4f6c9363 ""
-  "CMPUT631_proposal_Islam_Zifei.bbl" 1572115691 2658 1dbadad9eb67ffbd9e3db0e4173f5c3a "bibtex CMPUT631_proposal_Islam_Zifei"
-  "CMPUT631_proposal_Islam_Zifei.out" 1572115691 899 80e458115d65a92d17d0a95b088b4163 ""
-  "CMPUT631_proposal_Islam_Zifei.tex" 1572115689 11297 72a34558d06fdcb6392af0938120bb94 ""
+  "CMPUT631_proposal_Islam_Zifei.aux" 1572117211 3394 c0a87232d9257cb147e28024ca458e94 ""
+  "CMPUT631_proposal_Islam_Zifei.bbl" 1572117211 2658 1dbadad9eb67ffbd9e3db0e4173f5c3a "bibtex CMPUT631_proposal_Islam_Zifei"
+  "CMPUT631_proposal_Islam_Zifei.out" 1572117211 829 e8f39caf3643436f72d3144c68440706 ""
+  "CMPUT631_proposal_Islam_Zifei.tex" 1572117209 11768 85d322a8f04ac9848c79289c8ef180c8 ""
   (generated)
-  "CMPUT631_proposal_Islam_Zifei.log"
-  "/home/zifei/ORBSLAM_RTABmap/Proposal/CMPUT631_proposal_Islam_Zifei.log"
   "CMPUT631_proposal_Islam_Zifei.out"
+  "CMPUT631_proposal_Islam_Zifei.log"
   "/home/zifei/ORBSLAM_RTABmap/Proposal/CMPUT631_proposal_Islam_Zifei.pdf"
-  "CMPUT631_proposal_Islam_Zifei.aux"
   "CMPUT631_proposal_Islam_Zifei.pdf"
+  "/home/zifei/ORBSLAM_RTABmap/Proposal/CMPUT631_proposal_Islam_Zifei.log"
+  "CMPUT631_proposal_Islam_Zifei.aux"
