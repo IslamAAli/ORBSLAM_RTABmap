@@ -1,3 +1,46 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: CMPUT631_proposal_Islam_Zifei.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: CMPUT631_proposal_Islam_Zifei.aux
 The style file: ieeetr.bst
 Database file #1: journal09.bib
+You've used 16 entries,
+            1876 wiz_defined-function locations,
+            579 strings with 7034 characters,
+and the built_in function-call counts, 5173 in all, are:
+= -- 491
+> -- 220
+< -- 0
++ -- 78
+- -- 62
+* -- 392
+:= -- 719
+add.period$ -- 16
+call.type$ -- 16
+change.case$ -- 16
+chr.to.int$ -- 0
+cite$ -- 16
+duplicate$ -- 274
+empty$ -- 487
+format.name$ -- 62
+if$ -- 1264
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 16
+newline$ -- 51
+num.names$ -- 18
+pop$ -- 64
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 187
+stack$ -- 0
+substring$ -- 360
+swap$ -- 114
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 52
+width$ -- 18
+write$ -- 163
