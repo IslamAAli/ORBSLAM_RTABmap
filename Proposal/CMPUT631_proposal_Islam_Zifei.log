@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.20)  26 OCT 2019 02:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.20)  26 OCT 2019 20:30
 entering extended mode
 **./CMPUT631_proposal_Islam_Zifei.tex
 (CMPUT631_proposal_Islam_Zifei.tex
@@ -1128,23 +1128,44 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 ("C:\Users\Islam Alaa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lastpage\last
 page.sty"
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
+)
+("C:\Users\Islam Alaa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\book
+tabs.sty"
+Package: booktabs 2019/10/08 v1.6180339 publication quality tables
+\heavyrulewidth=\dimen293
+\lightrulewidth=\dimen294
+\cmidrulewidth=\dimen295
+\belowrulesep=\dimen296
+\belowbottomsep=\dimen297
+\aboverulesep=\dimen298
+\abovetopsep=\dimen299
+\cmidrulesep=\dimen300
+\cmidrulekern=\dimen301
+\defaultaddspace=\dimen302
+\@cmidla=\count303
+\@cmidlb=\count304
+\@aboverulesep=\dimen303
+\@belowrulesep=\dimen304
+\@thisruleclass=\count305
+\@lastruleclass=\count306
+\@thisrulewidth=\dimen305
 ) (CMPUT631_proposal_Islam_Zifei.aux)
 \openout1 = `CMPUT631_proposal_Islam_Zifei.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1184,26 +1205,26 @@ LaTeX Font Info:    ... okay on input line 36.
 ("C:\Users\Islam Alaa\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-p
 df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count303
-\scratchdimen=\dimen293
+\scratchcounter=\count307
+\scratchdimen=\dimen306
 \scratchbox=\box80
-\nofMPsegments=\count304
-\nofMParguments=\count305
+\nofMPsegments=\count308
+\nofMParguments=\count309
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count306
-\MPscratchDim=\dimen294
-\MPnumerator=\count307
-\makeMPintoPDFobject=\count308
+\MPscratchCnt=\count310
+\MPscratchDim=\dimen307
+\MPnumerator=\count311
+\makeMPintoPDFobject=\count312
 \everyMPtoPDFconversion=\toks50
 ) ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 36.
+ on input line 44.
 
 \AtBeginShipoutBox=\box81
-Package hyperref Info: Link coloring OFF on input line 36.
+Package hyperref Info: Link coloring OFF on input line 44.
 
 ("C:\Users\Islam Alaa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\name
 ref.sty"
@@ -1213,11 +1234,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ttitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count309
+\c@section@level=\count313
 )
-LaTeX Info: Redefining \ref on input line 36.
-LaTeX Info: Redefining \pageref on input line 36.
-LaTeX Info: Redefining \nameref on input line 36.
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
  (CMPUT631_proposal_Islam_Zifei.out)
 (CMPUT631_proposal_Islam_Zifei.out)
 \@outlinefile=\write4
@@ -1228,14 +1249,14 @@ Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 36.
-LaTeX Font Info:    Try loading font information for U+msa on input line 46.
+(lastpage)             ! on input line 44.
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
 
 ("C:\Users\Islam Alaa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa
 .fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 46.
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
 
 ("C:\Users\Islam Alaa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb
 .fd"
@@ -1250,41 +1271,56 @@ This may cause the page layout to be inconsistent, however.
 [1{C:/Users/Islam Alaa/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-[2] [3] [4] (CMPUT631_proposal_Islam_Zifei.bbl [5])
+Overfull \hbox (1.06654pt too wide) in paragraph at lines 79--80
+\OT1/cmr/m/n/12 RTAB-Map, (Real-Time Appearance-Based Map-ping), is an open sou
+rce Graph-Based SLAM
+ []
+
+[2]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 90.
+
+[3] [4] [5] (CMPUT631_proposal_Islam_Zifei.bbl [1])
 
 AED: lastpage setting LastPage
-[6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
+[2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
  (CMPUT631_proposal_Islam_Zifei.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
 Package rerunfilecheck Info: File `CMPUT631_proposal_Islam_Zifei.out' has not c
 hanged.
-(rerunfilecheck)             Checksum: DD32A03D8AD8A2FA14DFBB80599F01F3;918.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
+(rerunfilecheck)             Checksum: 106A17C591FA2FC1E8A8A3BE7C663AC8;847.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
  ) 
 Here is how much of TeX's memory you used:
- 38541 strings out of 492970
- 896651 string characters out of 3124371
- 1141235 words of memory out of 3000000
- 41852 multiletter control sequences out of 15000+200000
- 538243 words of font info for 46 fonts, out of 3000000 for 9000
+ 38608 strings out of 492970
+ 897600 string characters out of 3124371
+ 1143237 words of memory out of 3000000
+ 41911 multiletter control sequences out of 15000+200000
+ 538864 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,96p,1554b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Islam Alaa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/Islam Alaa/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Islam Alaa/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Islam Alaa/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Use
+s/type1/public/amsfonts/cm/cmbx6.pfb><C:/Users/Islam Alaa/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Islam Alaa/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Use
 rs/Islam Alaa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr12.pfb><C:/Users/Islam Alaa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb><C:/Users/Islam Alaa/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Islam Alaa/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on CMPUT631_proposal_Islam_Zifei.pdf (6 pages, 132444 bytes).
+cmmi12.pfb><C:/Users/Islam Alaa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi6.pfb><C:/Users/Islam Alaa/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Islam Alaa/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Islam A
+laa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+C:/Users/Islam Alaa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb><C:/Users/Islam Alaa/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Islam Alaa/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on CMPUT631_proposal_Islam_Zifei.pdf (7 pages, 175328 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 37 named destinations out of 1000 (max. 500000)
- 125 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 209 PDF objects out of 1000 (max. 8388607)
+ 39 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

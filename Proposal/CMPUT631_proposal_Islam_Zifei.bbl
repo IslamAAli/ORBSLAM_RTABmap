@@ -47,6 +47,11 @@ T.~Taketomi, H.~Uchiyama, and S.~Ikeda, ``Visual slam algorithms: a survey from
 H.~Strasdat, J.~M. Montiel, and A.~J. Davison, ``Visual slam: why filter?,''
   {\em Image and Vision Computing}, vol.~30, no.~2, pp.~65--77, 2012.
 
+\bibitem{Fraundorfer2012}
+F.~Fraundorfer and D.~Scaramuzza, ``Visual odometry: Part ii - matching,
+  robustness, and applications,'' {\em IEEE Robotics {\&} Automation Magazine},
+  vol.~19, no.~2, pp.~78--90, 2012.
+
 \bibitem{8806213}
 N.~{Ragot}, R.~{Khemmar}, A.~{Pokala}, R.~{Rossi}, and J.~{Ertaud}, ``Benchmark
   of visual slam algorithms: Orb-slam2 vs rtab-map*,'' in {\em 2019 Eighth

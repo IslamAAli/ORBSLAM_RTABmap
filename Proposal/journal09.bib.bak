@@ -169,4 +169,15 @@
   keywords  = {control engineering computing;image colour analysis;mobile robots;operating systems (computers);robot programming;SLAM (robots);robotics application;experimental evaluation;RGB-D sensors;Hector SLAM;ORB SLAM 2;RTAB-Map;ROS compatible SLAM algorithms;Robot Operating System;ROS packages;Simultaneous Localization and Mapping;Gmapping;ORB SLAM;Simultaneous localization and mapping;Algorithm design and analysis;Cameras;Three-dimensional displays},
 }
 
+@InProceedings{8250081,
+  author    = {I. Z. {Ibragimov} and I. M. {Afanasyev}},
+  title     = {Comparison of ROS-based visual SLAM methods in homogeneous indoor environment},
+  booktitle = {2017 14th Workshop on Positioning, Navigation and Communications (WPNC)},
+  year      = {2017},
+  pages     = {1-6},
+  month     = {Oct},
+  doi       = {10.1109/WPNC.2017.8250081},
+  keywords  = {cameras;image colour analysis;image sensors;image sequences;mobile robots;object detection;optical radar;robot vision;SLAM (robots);trajectories;conventional camera;LIDAR;ZED stereo camera;UGV prototype motion;monocular ORB-SLAM;ZED camera data;MS Kinect 2.0 depth sensor data;Hector SLAM;ROS;visual SLAM methods;homogeneous indoor environment;mobile robot application;sensor data;Trajectory;Simultaneous localization and mapping;Three-dimensional displays;Cameras;Laser radar;Prototypes;Visual SLAM;visual odometry;ORB-SLAM;DPPTAM;RTAB-Map;Kinect;LIDAR;ZED camera;ROS},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
