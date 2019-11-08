@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/local/NONLIN/zifei/code_repo/slamros/devel -DCMAKE_INSTALL_PREFIX=/home/local/NONLIN/zifei/code_repo/slamros/install -G Unix Makefiles
