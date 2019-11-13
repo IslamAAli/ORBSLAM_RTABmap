@@ -310,6 +310,41 @@ def percentile(seq,q):
     seq_sorted.sort()
     return seq_sorted[int((len(seq_sorted)-1)*q)]
 
+
+def convertFileFormat(FileIn_path, FileOut_path):
+    """
+    :param FileIn_path: The file output from SLAM engine needed to be converted to TUM format
+    :param FileOut_path: the temp file that will have the converted format
+    :return: None
+    """
+    fin = open(FileIn_path, "r")
+    fout = open(FileOut_path, "w")
+    for line in fin:
+        if line[0] != "%":  # ignore the first line with the header
+            splitted_line = line.split(',')
+            fout.write(str(float(splitted_line[0]) / (10 ** 9)) + " "
+                       + splitted_line[4] + " "
+                       + splitted_line[5] + " "
+                       + splitted_line[6] + " "
+                       + splitted_line[7] + " "
+                       + splitted_line[8] + " "
+                       + splitted_line[9] + " "
+                       + splitted_line[10])
+
+            # print( str(float(splitted_line[0]) / (10**9)) + " "
+            #        + splitted_line[4] + " "
+            #        + splitted_line[5] + " "
+            #        + splitted_line[6] + " "
+            #        + splitted_line[7] + " "
+            #        + splitted_line[8] + " "
+            #        + splitted_line[9] + " "
+            #        + splitted_line[10])
+
+    fin.close()
+    fout.close()
+
+
+
 if __name__ == '__main__':
     random.seed(0)
 
@@ -328,7 +363,11 @@ if __name__ == '__main__':
     parser.add_argument('--plot', help='plot the result to a file (requires --fixed_delta, output format: png)')
     parser.add_argument('--verbose', help='print all evaluation data (otherwise, only the mean translational error measured in meters will be printed)', action='store_true')
     args = parser.parse_args()
-    
+
+
+    # convert file in case of ORB-SLAM ROS output
+    # convertFileFormat("", "")
+
     if args.plot and not args.fixed_delta:
         sys.exit("The '--plot' option can only be used in combination with '--fixed_delta'")
     
