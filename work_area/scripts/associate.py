@@ -44,7 +44,6 @@ import argparse
 import sys
 import os
 import numpy
-import shutil
 
 
 def read_file_list(filename):
@@ -84,8 +83,10 @@ def associate(first_list, second_list,offset,max_difference):
     matches -- list of matched tuples ((stamp1,data1),(stamp2,data2))
     
     """
-    first_keys = first_list.keys()
-    second_keys = second_list.keys()
+    #first_keys = first_list.keys()
+    first_keys = list(first_list)
+    #second_keys = second_list.keys()
+    second_keys = list(second_list)
     potential_matches = [(abs(a - (b + offset)), a, b) 
                          for a in first_keys 
                          for b in second_keys 
@@ -119,22 +120,11 @@ if __name__ == '__main__':
 
     matches = associate(first_list, second_list,float(args.offset),float(args.max_difference))    
 
-    if not os.path.exists("rgb_sync"): 
-        os.makedirs("rgb_sync")
-    if not os.path.exists("depth_sync"): 
-        os.makedirs("depth_sync")
-
     if args.first_only:
         for a,b in matches:
             print("%f %s"%(a," ".join(first_list[a])))
     else:
         for a,b in matches:
             print("%f %s %f %s"%(a," ".join(first_list[a]),b-float(args.offset)," ".join(second_list[b])))
-            print("%s"%(" ".join(first_list[a])))
-            print(" ".join(first_list[a]).split("/")[1])
-            print("%s"%("rgb_sync/" + " ".join(first_list[a]).split("/")[1]))
-            print("%s"%(" ".join(first_list[a]).split("/")[1]))
-            shutil.move(" ".join(first_list[a]), "rgb_sync/" + " ".join(first_list[a]).split("/")[1])
-            shutil.move(" ".join(second_list[b]), "depth_sync/" + " ".join(second_list[b]).split("/")[1])
             
         
