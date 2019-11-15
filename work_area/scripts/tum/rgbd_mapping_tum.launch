@@ -16,6 +16,7 @@
   
   <!-- Corresponding config files -->
   <arg name="rtabmapviz_cfg"          default="~/.ros/rtabmap_gui.ini" />
+
   <arg name="rviz_cfg"                default="$(find rtabmap_run)/launch/config/rgbd.rviz" />
   
   <arg name="frame_id"                default="openni_camera"/>   <!-- Fixed frame id, you may set "base_link" or "base_footprint" if they are published -->
