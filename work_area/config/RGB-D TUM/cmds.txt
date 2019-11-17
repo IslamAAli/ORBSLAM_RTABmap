@@ -1,8 +1,24 @@
-rostopic echo -p /orb_slam2_rgbd/pose > /home/islamali/large_with_loop_pose.txt &
-rostopic echo -p /orb_slam2_rgbd/map_points > /home/islamali/large_with_loop_map_points.txt &
+rostopic echo -p /orb_slam2_rgbd/pose > /home/islamali/results/orbslam2_large_with_loop_pose.txt &
+rostopic echo -p /orb_slam2_rgbd/map_points > /home/islamali/results/orbslam2_large_with_loop_map_points.txt &
 
-rostopic echo -p /orb_slam2_rgbd/pose > /home/islamali/pioneer_slam_pose.txt &
-rostopic echo -p /orb_slam2_rgbd/map_points > /home/islamali/pioneer_slam_map_points.txt &
+rostopic echo -p /orb_slam2_rgbd/pose > /home/islamali/results/orbslam2_pioneer_slam_pose.txt &
+rostopic echo -p /orb_slam2_rgbd/map_points > /home/islamali/results/orbslam2_pioneer_slam_map_points.txt &
 
-rostopic echo -p /orb_slam2_rgbd/pose > /home/islamali/long_office_household_pose.txt &
-rostopic echo -p /orb_slam2_rgbd/map_points > /home/islamali/long_office_household_map_points.txt &
+rostopic echo -p /orb_slam2_rgbd/pose > /home/islamali/results/orbslam2_long_office_household_pose.txt &
+rostopic echo -p /orb_slam2_rgbd/map_points > /home/islamali/results/orbslam2_long_office_household_map_points.txt &
+
+
+rosbag play rgbd_dataset_freiburg2_large_with_loop.bag 
+rosbag play rgbd_dataset_freiburg2_pioneer_slam.bag
+rosbag play rgbd_dataset_freiburg3_long_office_household.bag
+
+
+roslaunch rtabmap_run rgbd_mapping_tum.launch
+
+roslaunch orb_slam2_ros tum_main_fb1.launch
+roslaunch orb_slam2_ros tum_main_fb2.launch
+roslaunch orb_slam2_ros tum_main_fb3.launch
+
+rostopic echo /orb_slam2_rgbd/pose
+rostopic echo /orb_slam2_rgbd/map_points
+
