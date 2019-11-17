@@ -1,0 +1,8 @@
+rostopic echo -p /orb_slam2_rgbd/pose > /home/islamali/large_with_loop_pose.txt &
+rostopic echo -p /orb_slam2_rgbd/map_points > /home/islamali/large_with_loop_map_points.txt &
+
+rostopic echo -p /orb_slam2_rgbd/pose > /home/islamali/pioneer_slam_pose.txt &
+rostopic echo -p /orb_slam2_rgbd/map_points > /home/islamali/pioneer_slam_map_points.txt &
+
+rostopic echo -p /orb_slam2_rgbd/pose > /home/islamali/long_office_household_pose.txt &
+rostopic echo -p /orb_slam2_rgbd/map_points > /home/islamali/long_office_household_map_points.txt &
