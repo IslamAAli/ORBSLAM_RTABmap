@@ -1,0 +1,83 @@
+\begin{thebibliography}{10}
+
+\bibitem{labbe2019rtab}
+M.~Labb{\'e} and F.~Michaud, ``Rtab-map as an open-source lidar and visual
+  simultaneous localization and mapping library for large-scale and long-term
+  online operation,'' {\em Journal of Field Robotics}, vol.~36, no.~2,
+  pp.~416--446, 2019.
+
+\bibitem{mur2015orb}
+R.~Mur-Artal, J.~M.~M. Montiel, and J.~D. Tardos, ``Orb-slam: a versatile and
+  accurate monocular slam system,'' {\em IEEE transactions on robotics},
+  vol.~31, no.~5, pp.~1147--1163, 2015.
+
+\bibitem{mur2017orb}
+R.~Mur-Artal and J.~D. Tard{\'o}s, ``Orb-slam2: An open-source slam system for
+  monocular, stereo, and rgb-d cameras,'' {\em IEEE Transactions on Robotics},
+  vol.~33, no.~5, pp.~1255--1262, 2017.
+
+\bibitem{study2018}
+A.~R. Gaspar, A.~Nunes, A.~Pinto, and A.~Matos, ``Comparative study of visual
+  odometry and slam techniques,'' in {\em ROBOT 2017: Third Iberian Robotics
+  Conference} (A.~Ollero, A.~Sanfeliu, L.~Montano, N.~Lau, and C.~Cardeira,
+  eds.), (Cham), pp.~463--474, Springer International Publishing, 2018.
+
+\bibitem{8710464}
+M.~{Filipenko} and I.~{Afanasyev}, ``Comparison of various slam systems for
+  mobile robot in an indoor environment,'' in {\em 2018 International
+  Conference on Intelligent Systems (IS)}, pp.~400--407, Sep. 2018.
+
+\bibitem{cadena2016past}
+C.~Cadena, L.~Carlone, H.~Carrillo, Y.~Latif, D.~Scaramuzza, J.~Neira, I.~Reid,
+  and J.~J. Leonard, ``Past, present, and future of simultaneous localization
+  and mapping: Toward the robust-perception age,'' {\em IEEE Transactions on
+  robotics}, vol.~32, no.~6, pp.~1309--1332, 2016.
+
+\bibitem{bresson2017simultaneous}
+G.~Bresson, Z.~Alsayed, L.~Yu, and S.~Glaser, ``Simultaneous localization and
+  mapping: A survey of current trends in autonomous driving,'' {\em IEEE
+  Transactions on Intelligent Vehicles}, vol.~2, no.~3, pp.~194--220, 2017.
+
+\bibitem{taketomi2017visual}
+T.~Taketomi, H.~Uchiyama, and S.~Ikeda, ``Visual slam algorithms: a survey from
+  2010 to 2016,'' {\em IPSJ Transactions on Computer Vision and Applications},
+  vol.~9, no.~1, p.~16, 2017.
+
+\bibitem{strasdat2012visual}
+H.~Strasdat, J.~M. Montiel, and A.~J. Davison, ``Visual slam: why filter?,''
+  {\em Image and Vision Computing}, vol.~30, no.~2, pp.~65--77, 2012.
+
+\bibitem{Fraundorfer2012}
+F.~Fraundorfer and D.~Scaramuzza, ``Visual odometry: Part ii - matching,
+  robustness, and applications,'' {\em IEEE Robotics {\&} Automation Magazine},
+  vol.~19, no.~2, pp.~78--90, 2012.
+
+\bibitem{8806213}
+N.~{Ragot}, R.~{Khemmar}, A.~{Pokala}, R.~{Rossi}, and J.~{Ertaud}, ``Benchmark
+  of visual slam algorithms: Orb-slam2 vs rtab-map*,'' in {\em 2019 Eighth
+  International Conference on Emerging Security Technologies (EST)}, pp.~1--6,
+  July 2019.
+
+\bibitem{8215331}
+B.~M.~F. {da Silva}, R.~S. {Xavier}, T.~P. {do Nascimento}, and L.~M.~G.
+  {Gonsalves}, ``Experimental evaluation of ros compatible slam algorithms for
+  rgb-d sensors,'' in {\em 2017 Latin American Robotics Symposium (LARS) and
+  2017 Brazilian Symposium on Robotics (SBR)}, pp.~1--6, Nov 2017.
+
+\bibitem{8250081}
+I.~Z. {Ibragimov} and I.~M. {Afanasyev}, ``Comparison of ros-based visual slam
+  methods in homogeneous indoor environment,'' in {\em 2017 14th Workshop on
+  Positioning, Navigation and Communications (WPNC)}, pp.~1--6, Oct 2017.
+
+\bibitem{sturm2012benchmark}
+J.~Sturm, N.~Engelhard, F.~Endres, W.~Burgard, and D.~Cremers, ``A benchmark
+  for the evaluation of rgb-d slam systems,'' in {\em 2012 IEEE/RSJ
+  International Conference on Intelligent Robots and Systems}, pp.~573--580,
+  IEEE, 2012.
+
+\bibitem{Geiger2012CVPR}
+A.~Geiger, P.~Lenz, and R.~Urtasun, ``Are we ready for autonomous driving? the
+  kitti vision benchmark suite,'' in {\em Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, 2012.
+
+\end{thebibliography}

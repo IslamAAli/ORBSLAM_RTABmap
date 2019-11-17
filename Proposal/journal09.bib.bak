@@ -1,0 +1,183 @@
+% Encoding: UTF-8
+
+@InProceedings{8373411,
+  author    = {I. {Alaa} and A. {Wassal}},
+  title     = {VO-Sim: A generic framework for tuning and evaluating visual odometry systems},
+  booktitle = {2018 IEEE/ION Position, Location and Navigation Symposium (PLANS)},
+  year      = {2018},
+  pages     = {432-439},
+  month     = {April},
+  doi       = {10.1109/PLANS.2018.8373411},
+  keywords  = {computer vision;distance measurement;stereo image processing;VO-Sim;visual odometry systems tuning;VO algorithms;monocular VO engines;vision-based solutions;stereo VO systems;high-performance inexpensive cameras;generic framework;Pipelines;Feature extraction;Cameras;Tuning;Visual odometry;Testing;Engines},
+}
+
+@Article{bresson2017simultaneous,
+  author    = {Bresson, Guillaume and Alsayed, Zayed and Yu, Li and Glaser, S{\'e}bastien},
+  title     = {Simultaneous localization and mapping: A survey of current trends in autonomous driving},
+  journal   = {IEEE Transactions on Intelligent Vehicles},
+  year      = {2017},
+  volume    = {2},
+  number    = {3},
+  pages     = {194--220},
+  publisher = {IEEE},
+}
+
+@Article{taketomi2017visual,
+  author    = {Taketomi, Takafumi and Uchiyama, Hideaki and Ikeda, Sei},
+  title     = {Visual SLAM algorithms: a survey from 2010 to 2016},
+  journal   = {IPSJ Transactions on Computer Vision and Applications},
+  year      = {2017},
+  volume    = {9},
+  number    = {1},
+  pages     = {16},
+  publisher = {SpringerOpen},
+}
+
+@Article{cadena2016past,
+  author    = {Cadena, Cesar and Carlone, Luca and Carrillo, Henry and Latif, Yasir and Scaramuzza, Davide and Neira, Jos{\'e} and Reid, Ian and Leonard, John J},
+  title     = {Past, present, and future of simultaneous localization and mapping: Toward the robust-perception age},
+  journal   = {IEEE Transactions on robotics},
+  year      = {2016},
+  volume    = {32},
+  number    = {6},
+  pages     = {1309--1332},
+  publisher = {IEEE},
+}
+
+@Article{durrant2006simultaneous,
+  author    = {Durrant-Whyte, Hugh and Bailey, Tim},
+  title     = {Simultaneous localization and mapping: part I},
+  journal   = {IEEE robotics \& automation magazine},
+  year      = {2006},
+  volume    = {13},
+  number    = {2},
+  pages     = {99--110},
+  publisher = {IEEE},
+}
+
+@Article{strasdat2012visual,
+  author    = {Strasdat, Hauke and Montiel, Jos{\'e} MM and Davison, Andrew J},
+  title     = {Visual SLAM: why filter?},
+  journal   = {Image and Vision Computing},
+  year      = {2012},
+  volume    = {30},
+  number    = {2},
+  pages     = {65--77},
+  publisher = {Elsevier},
+}
+
+@InProceedings{8710464,
+  author    = {M. {Filipenko} and I. {Afanasyev}},
+  title     = {Comparison of Various SLAM Systems for Mobile Robot in an Indoor Environment},
+  booktitle = {2018 International Conference on Intelligent Systems (IS)},
+  year      = {2018},
+  pages     = {400-407},
+  month     = {Sep.},
+  doi       = {10.1109/IS.2018.8710464},
+  keywords  = {cameras;cartography;data acquisition;distance measurement;indoor environment;mobile robots;optical radar;sensors;SLAM (robots);stereo image processing;indoor environment;mobile robot trajectories;ROS-based SLAM systems;monocular stereo cameras;ZED stereo cameras;LSD SLAM;sensors;hector SLAM methods;monocular ORB SLAM methods;stereo RTAB map methods;2D lidar-based cartographer SLAM methods;GMapping;large scale direct monocular SLAM methods;direct sparse odometry;DSO;ZEDfu;real-time appearance-based mapping;stereo parallel tracking and mapping;S-PTAM;Simultaneous localization and mapping;Cameras;Laser radar;Two dimensional displays;Trajectory;simultaneous localization and mapping (SLAM);visual odometry;indoor navigation;ROS},
+}
+
+@InProceedings{Geiger2012CVPR,
+  author    = {Andreas Geiger and Philip Lenz and Raquel Urtasun},
+  title     = {Are we ready for Autonomous Driving? The KITTI Vision Benchmark Suite},
+  booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2012},
+}
+
+@InProceedings{sturm2012benchmark,
+  author       = {Sturm, J{\"u}rgen and Engelhard, Nikolas and Endres, Felix and Burgard, Wolfram and Cremers, Daniel},
+  title        = {A benchmark for the evaluation of RGB-D SLAM systems},
+  booktitle    = {2012 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  year         = {2012},
+  pages        = {573--580},
+  organization = {IEEE},
+}
+
+@Article{labbe2019rtab,
+  author    = {Labb{\'e}, Mathieu and Michaud, Fran{\c{c}}ois},
+  title     = {RTAB-Map as an open-source lidar and visual simultaneous localization and mapping library for large-scale and long-term online operation},
+  journal   = {Journal of Field Robotics},
+  year      = {2019},
+  volume    = {36},
+  number    = {2},
+  pages     = {416--446},
+  publisher = {Wiley Online Library},
+}
+
+@Article{mur2015orb,
+  author    = {Mur-Artal, Raul and Montiel, Jose Maria Martinez and Tardos, Juan D},
+  title     = {ORB-SLAM: a versatile and accurate monocular SLAM system},
+  journal   = {IEEE transactions on robotics},
+  year      = {2015},
+  volume    = {31},
+  number    = {5},
+  pages     = {1147--1163},
+  publisher = {IEEE},
+}
+
+@Article{mur2017orb,
+  author    = {Mur-Artal, Raul and Tard{\'o}s, Juan D},
+  title     = {Orb-slam2: An open-source slam system for monocular, stereo, and rgb-d cameras},
+  journal   = {IEEE Transactions on Robotics},
+  year      = {2017},
+  volume    = {33},
+  number    = {5},
+  pages     = {1255--1262},
+  publisher = {IEEE},
+}
+
+@InProceedings{study2018,
+  author    = {Gaspar, Ana Rita and Nunes, Alexandra and Pinto, Andry and Matos, Anibal},
+  title     = {Comparative Study of Visual Odometry and SLAM Techniques},
+  booktitle = {ROBOT 2017: Third Iberian Robotics Conference},
+  year      = {2018},
+  editor    = {Ollero, Anibal and Sanfeliu, Alberto and Montano, Luis and Lau, Nuno and Cardeira, Carlos},
+  pages     = {463--474},
+  address   = {Cham},
+  publisher = {Springer International Publishing},
+  abstract  = {The use of the odometry and SLAM visual methods in autonomous vehicles has been growing. Optical sensors provide valuable information from the scenario that enhance the navigation of autonomous vehicles. Although several visual techniques are already available in the literature, their performance could be significantly affected by the scene captured by the optical sensor. In this context, this paper presents a comparative analysis of three monocular visual odometry methods and three stereo SLAM techniques. The advantages, particularities and performance of each technique are discussed, to provide information that is relevant for the development of new research and novel robotic applications.},
+  isbn      = {978-3-319-70836-2},
+}
+
+@Article{Das2018SimultaneousLA,
+  author  = {Sagarnil Das},
+  title   = {Simultaneous Localization and Mapping (SLAM) using RTAB-MAP},
+  journal = {ArXiv},
+  year    = {2018},
+  volume  = {abs/1809.02989},
+}
+
+@InProceedings{8806213,
+  author    = {N. {Ragot} and R. {Khemmar} and A. {Pokala} and R. {Rossi} and J. {Ertaud}},
+  title     = {Benchmark of Visual SLAM Algorithms: ORB-SLAM2 vs RTAB-Map*},
+  booktitle = {2019 Eighth International Conference on Emerging Security Technologies (EST)},
+  year      = {2019},
+  pages     = {1-6},
+  month     = {July},
+  doi       = {10.1109/EST.2019.8806213},
+  keywords  = {cameras;handicapped aids;mobile robots;object detection;robot vision;SLAM (robots);wheelchairs;RTAB-Map;ORB-SLAM2;Intel real-sense camera;robotics electrical powered wheelchair;ORB SLAM;monocular RGB-D camera;stereo RGB-D camera;RTAB SLAM;visual SLAM algorithms;visual simultaneous localization and mapping algorithms;Simultaneous localization and mapping;Cameras;Wheelchairs;Robot vision systems;Three-dimensional displays;Visualization;Visual SLAM;ORB SLAM;RTAB SLAM;Localization;Mapping;Visual Odometry},
+}
+
+@InProceedings{8215331,
+  author    = {B. M. F. {da Silva} and R. S. {Xavier} and T. P. {do Nascimento} and L. M. G. {Gonsalves}},
+  title     = {Experimental evaluation of ROS compatible SLAM algorithms for RGB-D sensors},
+  booktitle = {2017 Latin American Robotics Symposium (LARS) and 2017 Brazilian Symposium on Robotics (SBR)},
+  year      = {2017},
+  pages     = {1-6},
+  month     = {Nov},
+  doi       = {10.1109/SBR-LARS-R.2017.8215331},
+  keywords  = {control engineering computing;image colour analysis;mobile robots;operating systems (computers);robot programming;SLAM (robots);robotics application;experimental evaluation;RGB-D sensors;Hector SLAM;ORB SLAM 2;RTAB-Map;ROS compatible SLAM algorithms;Robot Operating System;ROS packages;Simultaneous Localization and Mapping;Gmapping;ORB SLAM;Simultaneous localization and mapping;Algorithm design and analysis;Cameras;Three-dimensional displays},
+}
+
+@InProceedings{8250081,
+  author    = {I. Z. {Ibragimov} and I. M. {Afanasyev}},
+  title     = {Comparison of ROS-based visual SLAM methods in homogeneous indoor environment},
+  booktitle = {2017 14th Workshop on Positioning, Navigation and Communications (WPNC)},
+  year      = {2017},
+  pages     = {1-6},
+  month     = {Oct},
+  doi       = {10.1109/WPNC.2017.8250081},
+  keywords  = {cameras;image colour analysis;image sensors;image sequences;mobile robots;object detection;optical radar;robot vision;SLAM (robots);trajectories;conventional camera;LIDAR;ZED stereo camera;UGV prototype motion;monocular ORB-SLAM;ZED camera data;MS Kinect 2.0 depth sensor data;Hector SLAM;ROS;visual SLAM methods;homogeneous indoor environment;mobile robot application;sensor data;Trajectory;Simultaneous localization and mapping;Three-dimensional displays;Cameras;Laser radar;Prototypes;Visual SLAM;visual odometry;ORB-SLAM;DPPTAM;RTAB-Map;Kinect;LIDAR;ZED camera;ROS},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
