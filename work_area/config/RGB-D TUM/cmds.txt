@@ -12,8 +12,10 @@ rosbag play rgbd_dataset_freiburg2_large_with_loop.bag
 rosbag play rgbd_dataset_freiburg2_pioneer_slam.bag
 rosbag play rgbd_dataset_freiburg3_long_office_household.bag
 
-
+source devel/setup.bash
 roslaunch rtabmap_run rgbd_mapping_tum.launch
+
+roslaunch orb_slam2_ros tum_main.launch
 
 roslaunch orb_slam2_ros tum_main_fb1.launch
 roslaunch orb_slam2_ros tum_main_fb2.launch
