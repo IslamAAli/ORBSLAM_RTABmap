@@ -26,4 +26,6 @@ def convertFileFormat(FileIn_path, FileOut_path):
     fout.close()
 
 if __name__ == '__main__':
-    convertFileFormat("example_orbslam_out.txt", "test2.txt")
+    convertFileFormat("orbslam2_large_with_loop_pose.txt", "orbslam2_large_with_loop_pose_converted.txt")
+    convertFileFormat("orbslam2_long_office_household_pose.txt", "orbslam2_long_office_household_pose_converted.txt")
+    convertFileFormat("orbslam2_pioneer_slam_pose.txt", "orbslam2_pioneer_slam_pose_converted.txt")

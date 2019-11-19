@@ -45,7 +45,7 @@ trajectory and the estimated trajectory.
 
 """
 Example Usage:
-python evaluate_ate.py rgbd_dataset_freiburg1_xyz-groundtruth.txt freiburg1_xyz-rgbdslam.txt --plot figure.png --offset 0 --scale 1 --verbose
+python evaluate_ate.py rgbd_dataset_freiburg2_large_with_loop-groundtruth.txt orbslam2_large_with_loop_pose.txt --plot figure.png --offset 0 --scale 1 --verbose
 """
 
 import sys
@@ -212,7 +212,7 @@ if __name__ == "__main__":
     if args.plot:
         import matplotlib
 
-        matplotlib.use('Agg')
+        #matplotlib.use('Agg')
         import matplotlib.pyplot as plt
         import matplotlib.pylab as pylab
         from matplotlib.patches import Ellipse
@@ -232,5 +232,6 @@ if __name__ == "__main__":
 
         ax.set_xlabel('x [m]')
         ax.set_ylabel('y [m]')
+        plt.show()
         plt.savefig(args.plot, dpi=90)
 
