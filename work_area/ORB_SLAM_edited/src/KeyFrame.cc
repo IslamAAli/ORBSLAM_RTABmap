@@ -120,6 +120,18 @@ cv::Mat KeyFrame::GetTranslation()
     return Tcw.rowRange(0,3).col(3).clone();
 }
 
+cv::Mat KeyFrame::GetRotationInverse()
+{
+    unique_lock<mutex> lock(mMutexPose);
+    return Twc.rowRange(0,3).colRange(0,3).clone();
+}
+
+cv::Mat KeyFrame::GetTranslationInverse()
+{
+    unique_lock<mutex> lock(mMutexPose);
+    return Twc.rowRange(0,3).col(3).clone();
+}
+
 void KeyFrame::AddConnection(KeyFrame *pKF, const int &weight)
 {
     {

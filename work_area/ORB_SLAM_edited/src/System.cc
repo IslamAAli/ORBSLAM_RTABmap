@@ -447,7 +447,7 @@ void System::SaveKeyFrameInfo(const string &filename)
         f << setprecision(6) << pKF->mTimeStamp << setprecision(7) << " " << t.at<float>(0) << " " << t.at<float>(1) << " " << t.at<float>(2)
           << " " << q[0] << " " << q[1] << " " << q[2] << " " << q[3]
           << pKF->mnId << " "
-//          << pKF->mnFrameId << " "
+          << pKF->mnFrameId << " "
           << pKF->N << " "
           << pKF->fx <<" " << pKF->fy <<" " << pKF->cx <<" " << pKF->cy <<" "
           << pKF->invfx <<" " << pKF->invfy <<" " << pKF->mbf <<" " << pKF->mb <<" " << pKF->mThDepth <<" "
@@ -460,7 +460,27 @@ void System::SaveKeyFrameInfo(const string &filename)
 
 void System::SaveFinalMap(const string &filename)
 {
-    cout << "Saving final map .." << endl ;
+    cout << endl << "Saving map points to " << filename << " ..." << endl;
+
+    vector<MapPoint*> vpMPs = mpMap->GetAllMapPoints();
+
+    ofstream f;
+    f.open(filename.c_str());
+    f << fixed;
+
+    for(size_t i=0; i<vpMPs.size(); i++) {
+        MapPoint* pMP = vpMPs[i];
+
+        if(pMP->isBad())
+            continue;
+
+        cv::Mat MPPositions = pMP->GetWorldPos();
+
+        f << setprecision(7) << " " << MPPositions.at<float>(0) << " " << MPPositions.at<float>(1) << " " << MPPositions.at<float>(2) << endl;
+    }
+
+    f.close();
+    cout << endl << "Map Points saved!" << endl;
 }
 
 void System::SaveTrajectoryKITTI(const string &filename)

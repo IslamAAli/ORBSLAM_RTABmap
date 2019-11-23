@@ -53,6 +53,8 @@ public:
     cv::Mat GetStereoCenter();
     cv::Mat GetRotation();
     cv::Mat GetTranslation();
+    cv::Mat GetRotationInverse();
+    cv::Mat GetTranslationInverse();
 
     // Bag of Words Representation
     void ComputeBoW();

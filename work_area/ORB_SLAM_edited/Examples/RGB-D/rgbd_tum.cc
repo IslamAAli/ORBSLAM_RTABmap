@@ -139,8 +139,8 @@ int main(int argc, char **argv)
     SLAM.SaveTrajectoryTUM("CameraTrajectory.txt");
     SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory.txt");   
 
-    SLAM.SaveKeyFrameInfo("keyFrameInfo.txt");
-    SLAM.SaveFinalMap("FinalMap.txt");
+    SLAM.SaveKeyFrameInfo("DS_keyFrameInfo.txt");
+    SLAM.SaveFinalMap("DS_FinalMap.txt");
 
     return 0;
 }
