@@ -1,0 +1,19 @@
+Run Original Script
+---------------------
+
+python evaluate_ate.py TUM_run/rgbd_dataset_freiburg2_large_with_loop-groundtruth.txt TUM_run/orbslam2_large_with_loop_pose_converted.txt --plot figure.png --offset 0 --scale 1 --verbose
+
+python evaluate_ate.py TUM_run/rgbd_dataset_freiburg2_large_with_loop-groundtruth.txt TUM_run/rtabmap_tum_large_with_loop.txt --plot figure.png --offset 0 --scale 1 --verbose
+
+
+
+Run comparison script
+----------------------
+
+python evaluate_ate_tum.py TUM_run/rgbd_dataset_freiburg2_large_with_loop-groundtruth.txt TUM_run/rtabmap_tum_large_with_loop.txt TUM_run/orbslam2_large_with_loop_pose_converted.txt --plot figure.png --offset 0 --scale 1 --verbose
+
+
+python evaluate_ate_tum.py TUM_run/rgbd_dataset_freiburg2_pioneer_slam-groundtruth.txt TUM_run/rtabmap_tum_pioneer_slam.txt TUM_run/orbslam2_pioneer_slam_pose_converted.txt --plot figure.png --offset 0 --scale 1 --verbose
+
+
+python evaluate_ate_tum.py TUM_run/rgbd_dataset_freiburg3_long_office_household-groundtruth.txt TUM_run/rtabmap_tum_long_office_household.txt TUM_run/orbslam2_long_office_household_pose_converted.txt --plot figure.png --offset 0 --scale 1 --verbose

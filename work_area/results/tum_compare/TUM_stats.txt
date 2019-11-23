@@ -1,0 +1,64 @@
+1: RTABMap
+2: ORB-SLAM2
+
+large_with_loop
+----------------
+scale: 0.589600 
+1: compared_pose_pairs 27 pairs
+1: absolute_translational_error.rmse 0.396222 m
+1: absolute_translational_error.mean 0.363135 m
+1: absolute_translational_error.median 0.359834 m
+1: absolute_translational_error.std 0.158508 m
+1: absolute_translational_error.min 0.128593 m
+1: absolute_translational_error.max 0.690657 m
+
+scale: 0.952700
+2: compared_pose_pairs 606 pairs
+2: absolute_translational_error.rmse 0.154830 m
+2: absolute_translational_error.mean 0.123705 m
+2: absolute_translational_error.median 0.102499 m
+2: absolute_translational_error.std 0.093111 m
+2: absolute_translational_error.min 0.014657 m
+2: absolute_translational_error.max 0.830202 m
+
+pioneer_slam
+-------------
+scale: 0.583261
+1: compared_pose_pairs 71 pairs
+1: absolute_translational_error.rmse 1.594601 m
+1: absolute_translational_error.mean 1.218949 m
+1: absolute_translational_error.median 0.967022 m
+1: absolute_translational_error.std 1.028064 m
+1: absolute_translational_error.min 0.314284 m
+1: absolute_translational_error.max 7.111783 m
+
+scale: 1.067222
+2: compared_pose_pairs 1018 pairs
+2: absolute_translational_error.rmse 0.526254 m
+2: absolute_translational_error.mean 0.358929 m
+2: absolute_translational_error.median 0.229133 m
+2: absolute_translational_error.std 0.384854 m
+2: absolute_translational_error.min 0.032612 m
+2: absolute_translational_error.max 3.065498 m
+
+long_office_household
+----------------------
+scale: 1.007444
+1: compared_pose_pairs 63 pairs
+1: absolute_translational_error.rmse 0.042585 m
+1: absolute_translational_error.mean 0.040400 m
+1: absolute_translational_error.median 0.039149 m
+1: absolute_translational_error.std 0.013465 m
+1: absolute_translational_error.min 0.004160 m
+1: absolute_translational_error.max 0.074394 m
+
+scale: 0.990401
+2: compared_pose_pairs 1216 pairs
+2: absolute_translational_error.rmse 0.029494 m
+2: absolute_translational_error.mean 0.024862 m
+2: absolute_translational_error.median 0.018945 m
+2: absolute_translational_error.std 0.015867 m
+2: absolute_translational_error.min 0.001376 m
+2: absolute_translational_error.max 0.094773 m
+
+
