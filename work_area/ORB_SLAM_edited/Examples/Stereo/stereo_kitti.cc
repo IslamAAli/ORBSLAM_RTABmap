@@ -124,6 +124,11 @@ int main(int argc, char **argv)
     // Save camera trajectory
     SLAM.SaveTrajectoryKITTI("CameraTrajectory.txt");
 
+    SLAM.SaveKeyFrameInfo("DS_keyFrameFransformations_quat.txt");
+    SLAM.SaveTransformation("DS_keyFrameFransformations_RM.txt");
+    SLAM.SaveTransformationInverse("DS_keyFrameFransformationsInv_RM.txt");
+    SLAM.SaveFinalMap("DS_FinalMap.txt");
+
     return 0;
 }
 

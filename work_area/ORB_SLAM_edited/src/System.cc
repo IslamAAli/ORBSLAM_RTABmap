@@ -445,7 +445,7 @@ void System::SaveKeyFrameInfo(const string &filename)
         cv::Mat t = pKF->GetCameraCenter();
 
         f << setprecision(6) << pKF->mTimeStamp << setprecision(7) << " " << t.at<float>(0) << " " << t.at<float>(1) << " " << t.at<float>(2)
-          << " " << q[0] << " " << q[1] << " " << q[2] << " " << q[3]
+          << " " << q[0] << " " << q[1] << " " << q[2] << " " << q[3] << " "
           << pKF->mnId << " "
           << pKF->mnFrameId << " "
           << pKF->N << " "
@@ -456,6 +456,83 @@ void System::SaveKeyFrameInfo(const string &filename)
 
     f.close();
     cout << endl << "Key Frames for Simualted LiDAR is saved!" << endl;
+}
+
+
+void System::SaveTransformation(const string &filename)
+{
+    cout << endl << "Saving keyframe Info for LiDAR simulation to " << filename << " ..." << endl;
+
+    vector<KeyFrame*> vpKFs = mpMap->GetAllKeyFrames();
+    sort(vpKFs.begin(),vpKFs.end(),KeyFrame::lId);
+
+    ofstream f;
+    f.open(filename.c_str());
+    f << fixed;
+
+    for(size_t i=0; i<vpKFs.size(); i++)
+    {
+        KeyFrame* pKF = vpKFs[i];
+
+       // pKF->SetPose(pKF->GetPose()*Two);
+
+        if(pKF->isBad())
+            continue;
+
+        cv::Mat R = pKF->GetRotation().t();
+        cv::Mat t = pKF->GetCameraCenter();
+
+        f << setprecision(6) << pKF->mTimeStamp << setprecision(7)
+          << " " << t.at<float>(0) << " " << t.at<float>(1) << " " << t.at<float>(2)
+          << " " << R.at<float>(0,0) << " " << R.at<float>(0,1) << " " << R.at<float>(0,2)
+          << " " << R.at<float>(1,0) << " " << R.at<float>(1,1) << " " << R.at<float>(1,2)
+          << " " << R.at<float>(2,0) << " " << R.at<float>(2,1) << " " << R.at<float>(2,2)
+          << " " << pKF->mnId << " " << pKF->mnFrameId << " "
+          << pKF->fx <<" " << pKF->fy <<" " << pKF->cx <<" " << pKF->cy <<" "
+          << pKF->invfx <<" " << pKF->invfy <<" " << pKF->mbf <<" " << pKF->mb <<" " << pKF->mThDepth
+          << endl;
+    }
+
+    f.close();
+    cout << endl << "Transformations are saved!" << endl;
+}
+
+void System::SaveTransformationInverse(const string &filename)
+{
+    cout << endl << "Saving keyframe Info for LiDAR simulation to " << filename << " ..." << endl;
+
+    vector<KeyFrame*> vpKFs = mpMap->GetAllKeyFrames();
+    sort(vpKFs.begin(),vpKFs.end(),KeyFrame::lId);
+
+    ofstream f;
+    f.open(filename.c_str());
+    f << fixed;
+
+    for(size_t i=0; i<vpKFs.size(); i++)
+    {
+        KeyFrame* pKF = vpKFs[i];
+
+       // pKF->SetPose(pKF->GetPose()*Two);
+
+        if(pKF->isBad())
+            continue;
+
+        cv::Mat R = pKF->GetRotationInverse().t();
+        cv::Mat t = pKF->GetTranslationInverse();
+
+        f << setprecision(6) << pKF->mTimeStamp << setprecision(7)
+          << " " << t.at<float>(0) << " " << t.at<float>(1) << " " << t.at<float>(2)
+          << " " << R.at<float>(0,0) << " " << R.at<float>(0,1) << " " << R.at<float>(0,2)
+          << " " << R.at<float>(1,0) << " " << R.at<float>(1,1) << " " << R.at<float>(1,2)
+          << " " << R.at<float>(2,0) << " " << R.at<float>(2,1) << " " << R.at<float>(2,2)
+          << " " << pKF->mnId << " " << pKF->mnFrameId << " "
+          << pKF->fx <<" " << pKF->fy <<" " << pKF->cx <<" " << pKF->cy <<" "
+          << pKF->invfx <<" " << pKF->invfy <<" " << pKF->mbf <<" " << pKF->mb <<" " << pKF->mThDepth
+          << endl;
+    }
+
+    f.close();
+    cout << endl << "Transformation inverses are saved!" << endl;
 }
 
 void System::SaveFinalMap(const string &filename)
