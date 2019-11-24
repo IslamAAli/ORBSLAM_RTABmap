@@ -140,8 +140,8 @@ int main(int argc, char **argv)
     SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory.txt");   
 
     SLAM.SaveKeyFrameInfo("DS_keyFrameFransformations_quat.txt");
-    SLAM.SaveTransformation("DS_keyFrameFransformations_RM.txt");
-    SLAM.SaveTransformationInverse("DS_keyFrameFransformationsInv_RM.txt");
+    SLAM.SaveTransformation("DS_keyFrameTransformations_RM.txt");
+    SLAM.SaveTransformationInverse("DS_keyFrameTransformationsInv_RM.txt");
     SLAM.SaveFinalMap("DS_FinalMap.txt");
 
     return 0;
