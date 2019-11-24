@@ -110,6 +110,7 @@ public:
     void SaveFinalMap(const string &filename);
     void SaveTransformation(const string &filename);
     void SaveTransformationInverse(const string &filename);
+    void SaveFinalMapDetailed(const string &filename);
 
     // Save camera trajectory in the KITTI dataset format.
     // Only for stereo and RGB-D. This method does not work for monocular.

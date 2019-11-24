@@ -76,6 +76,7 @@ int main(int argc, char **argv)
     // Main loop
     cv::Mat imRGB, imD;
     for(int ni=0; ni<nImages; ni++)
+    //for(int ni=0; ni<10; ni++)
     {
         // Read image and depthmap from file
         imRGB = cv::imread(string(argv[3])+"/"+vstrImageFilenamesRGB[ni],CV_LOAD_IMAGE_UNCHANGED);
@@ -143,6 +144,7 @@ int main(int argc, char **argv)
     SLAM.SaveTransformation("DS_keyFrameTransformations_RM.txt");
     SLAM.SaveTransformationInverse("DS_keyFrameTransformationsInv_RM.txt");
     SLAM.SaveFinalMap("DS_FinalMap.txt");
+    SLAM.SaveFinalMapDetailed("DS_FinalMapDetailed.txt");
 
     return 0;
 }
