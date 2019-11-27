@@ -45,7 +45,7 @@ trajectory and the estimated trajectory.
 
 """
 Example Usage:
-python evaluate_ate.py rgbd_dataset_freiburg2_large_with_loop-groundtruth.txt orbslam2_large_with_loop_pose.txt --plot figure.png --offset 0 --scale 1 --verbose
+python evaluate_ate_tum.py rgbd_dataset_freiburg2_pioneer_slam-groundtruth.txt pioneer1.txt pioneerSlam_converted.txt --plot figure.png --offset 0 --scale 1 --verbose
 """
 
 import sys
@@ -141,7 +141,8 @@ if __name__ == "__main__":
     This script computes the absolute trajectory error from the ground truth trajectory and the estimated trajectory. 
     ''')
     parser.add_argument('first_file', help='ground truth trajectory (format: timestamp tx ty tz qx qy qz qw)')
-    parser.add_argument('second_file', help='estimated trajectory (format: timestamp tx ty tz qx qy qz qw)')
+    parser.add_argument('second_file', help='estimated trajectory 1 (format: timestamp tx ty tz qx qy qz qw)')
+    parser.add_argument('third_file', help='estimated trajectory 2 (format: timestamp tx ty tz qx qy qz qw)')
     parser.add_argument('--offset', help='time offset added to the timestamps of the second file (default: 0.0)',
                         default=0.0)
     parser.add_argument('--scale', help='scaling factor for the second trajectory (default: 1.0)', default=1.0)
@@ -158,18 +159,28 @@ if __name__ == "__main__":
 
     first_list = associate.read_file_list(args.first_file)
     second_list = associate.read_file_list(args.second_file)
+    third_list = associate.read_file_list(args.third_file)
 
-    matches = associate.associate(first_list, second_list, float(args.offset), float(args.max_difference))
-    if len(matches) < 2:
+    matches_1 = associate.associate(first_list, second_list, float(args.offset), float(args.max_difference))
+    matches_2 = associate.associate(first_list, third_list, float(args.offset), float(args.max_difference))
+
+    if (len(matches_1) < 2) or (len(matches_2) < 2):
         sys.exit(
             "Couldn't find matching timestamp pairs between groundtruth and estimated trajectory! Did you choose the correct sequence?")
 
-    first_xyz = numpy.matrix([[float(value) for value in first_list[a][0:3]] for a, b in matches]).transpose()
+    first_xyz_1 = numpy.matrix([[float(value) for value in first_list[a][0:3]] for a, b in matches_1]).transpose()
     second_xyz = numpy.matrix(
-        [[float(value) * float(args.scale) for value in second_list[b][0:3]] for a, b in matches]).transpose()
-    rot, trans, trans_error, scale = align(second_xyz, first_xyz)
+        [[float(value) * float(args.scale) for value in second_list[b][0:3]] for a, b in matches_1]).transpose()
 
-    second_xyz_aligned = scale * rot * second_xyz + trans
+    first_xyz_2 = numpy.matrix([[float(value) for value in first_list[a][0:3]] for a, b in matches_2]).transpose()
+    third_xyz = numpy.matrix(
+        [[float(value) * float(args.scale) for value in third_list[b][0:3]] for a, b in matches_2]).transpose()
+
+    rot_1, trans_1, trans_error_1, scale_1 = align(second_xyz, first_xyz_1)
+    rot_2, trans_2, trans_error_2, scale_2 = align(third_xyz, first_xyz_2)
+
+    second_xyz_aligned = scale_1 * rot_1 * second_xyz + trans_1
+    third_xyz_aligned = scale_2 * rot_2 * third_xyz + trans_2
 
     #first_stamps = first_list.keys()
     first_stamps = list(first_list)
@@ -181,26 +192,42 @@ if __name__ == "__main__":
     second_stamps.sort()
     second_xyz_full = numpy.matrix(
         [[float(value) * float(args.scale) for value in second_list[b][0:3]] for b in second_stamps]).transpose()
-    second_xyz_full_aligned = scale * rot * second_xyz_full + trans
+    second_xyz_full_aligned = scale_1 * rot_1 * second_xyz_full + trans_1
+
+    # third_stamps = third_list.keys()
+    third_stamps = list(third_list)
+    third_stamps.sort()
+    third_xyz_full = numpy.matrix(
+        [[float(value) * float(args.scale) for value in third_list[b][0:3]] for b in third_stamps]).transpose()
+    third_xyz_full_aligned = scale_2 * rot_2 * third_xyz_full + trans_2
 
     if args.verbose:
-        print ("compared_pose_pairs %d pairs" % (len(trans_error)))
+        print ("1: compared_pose_pairs %d pairs" % (len(trans_error_1)))
+        print ("1: absolute_translational_error.rmse %f m" % numpy.sqrt(
+            numpy.dot(trans_error_1, trans_error_1) / len(trans_error_1)))
+        print ("1: absolute_translational_error.mean %f m" % numpy.mean(trans_error_1))
+        print ("1: absolute_translational_error.median %f m" % numpy.median(trans_error_1))
+        print ("1: absolute_translational_error.std %f m" % numpy.std(trans_error_1))
+        print ("1: absolute_translational_error.min %f m" % numpy.min(trans_error_1))
+        print ("1: absolute_translational_error.max %f m" % numpy.max(trans_error_1))
 
-        print ("absolute_translational_error.rmse %f m" % numpy.sqrt(
-            numpy.dot(trans_error, trans_error) / len(trans_error)))
-        print ("absolute_translational_error.mean %f m" % numpy.mean(trans_error))
-        print ("absolute_translational_error.median %f m" % numpy.median(trans_error))
-        print ("absolute_translational_error.std %f m" % numpy.std(trans_error))
-        print ("absolute_translational_error.min %f m" % numpy.min(trans_error))
-        print ("absolute_translational_error.max %f m" % numpy.max(trans_error))
+        print ("2: compared_pose_pairs %d pairs" % (len(trans_error_2)))
+        print ("2: absolute_translational_error.rmse %f m" % numpy.sqrt(
+            numpy.dot(trans_error_2, trans_error_2) / len(trans_error_2)))
+        print ("2: absolute_translational_error.mean %f m" % numpy.mean(trans_error_2))
+        print ("2: absolute_translational_error.median %f m" % numpy.median(trans_error_2))
+        print ("2: absolute_translational_error.std %f m" % numpy.std(trans_error_2))
+        print ("2: absolute_translational_error.min %f m" % numpy.min(trans_error_2))
+        print ("2: absolute_translational_error.max %f m" % numpy.max(trans_error_2))
     else:
-        print ("%f" % numpy.sqrt(numpy.dot(trans_error, trans_error) / len(trans_error)))
+        print ("1: %f" % numpy.sqrt(numpy.dot(trans_error_1, trans_error_1) / len(trans_error_1)))
+        print ("2: %f" % numpy.sqrt(numpy.dot(trans_error_2, trans_error_2) / len(trans_error_2)))
 
     if args.save_associations:
         file = open(args.save_associations, "w")
         file.write("\n".join(
             ["%f %f %f %f %f %f %f %f" % (a, x1, y1, z1, b, x2, y2, z2) for (a, b), (x1, y1, z1), (x2, y2, z2) in
-             zip(matches, first_xyz.transpose().A, second_xyz_aligned.transpose().A)]))
+             zip(matches_1, first_xyz.transpose().A, second_xyz_aligned.transpose().A)]))
         file.close()
 
     if args.save:
@@ -220,13 +247,14 @@ if __name__ == "__main__":
         fig = plt.figure()
         ax = fig.add_subplot(111)
         plot_traj(ax, first_stamps, first_xyz_full.transpose().A, '-', "black", "ground truth")
-        plot_traj(ax, second_stamps, second_xyz_full_aligned.transpose().A, '-', "blue", "estimated")
+        plot_traj(ax, second_stamps, second_xyz_full_aligned.transpose().A, '-', "blue", "RTAB-Map")
+        plot_traj(ax, third_stamps, third_xyz_full_aligned.transpose().A, '-', "red", "ORB-SLAM2")
 
         label = "difference"
-        for (a, b), (x1, y1, z1), (x2, y2, z2) in zip(matches, first_xyz.transpose().A,
-                                                      second_xyz_aligned.transpose().A):
-            ax.plot([x1, x2], [y1, y2], '-', color="red", label=label)
-            label = ""
+        # for (a, b), (x1, y1, z1), (x2, y2, z2) in zip(matches, first_xyz.transpose().A,
+        #                                               second_xyz_aligned.transpose().A):
+        #     ax.plot([x1, x2], [y1, y2], '-', color="red", label=label)
+        #     label = ""
 
         ax.legend()
 
