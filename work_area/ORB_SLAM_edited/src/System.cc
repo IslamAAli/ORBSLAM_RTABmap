@@ -560,6 +560,50 @@ void System::SaveFinalMap(const string &filename)
     cout << endl << "Map Points saved!" << endl;
 }
 
+void System::SaveFinalMapDetailed(const string &filename)
+{
+    cout << endl << "Saving detailed map points to " << filename << " ..." << endl;
+
+    vector<MapPoint*> vpMPs = mpMap->GetAllMapPoints();
+
+    ofstream f;
+    f.open(filename.c_str());
+    f << fixed;
+
+    for(size_t i=0; i<vpMPs.size(); i++) {
+        MapPoint* pMP = vpMPs[i];
+
+        if(pMP->isBad())
+            continue;
+
+        cv::Mat MPPositions = pMP->GetWorldPos();
+
+        f << setprecision(7) << " " << MPPositions.at<float>(0) << " " << MPPositions.at<float>(1) << " " << MPPositions.at<float>(2) << " ";
+        //  << pMP->nObs << " ";
+
+        //cout << setprecision(7) << " " << MPPositions.at<float>(0) << " " << MPPositions.at<float>(1) << " " << MPPositions.at<float>(2) << " "
+        //  << endl << " -> No # " <<pMP->nObs << endl;
+
+        std::map<KeyFrame*,size_t>::iterator it;
+        string KFs_str = "";
+        int KFs_count = 0 ;
+        for (it= pMP->GetObservations().begin() ; it !=  pMP->GetObservations().end() ; it++ )
+        {
+            KFs_count ++ ;
+            KFs_str += std::to_string(it->first->mnId);
+            KFs_str += " ";
+            //f << it->first->mnId << " " ;
+            //cout << it->first->mnId<< endl;
+        }
+
+        f << KFs_count << " " << KFs_str << endl;
+        //cout << KFs_count << " " << KFs_str << endl;
+    }
+
+    f.close();
+    cout << endl << "Detailed Map Points saved!" << endl;
+}
+
 void System::SaveTrajectoryKITTI(const string &filename)
 {
     cout << endl << "Saving camera trajectory to " << filename << " ..." << endl;
