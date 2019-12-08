@@ -1,5 +1,6 @@
 #%%
 import numpy as np
+import pcl
 
 # %%
 class point:
@@ -91,7 +92,12 @@ if __name__ == '__main__':
     # %%
         pp.cloud()
         savepath1 = savepath + str(kk.keyframeid)
+        savepath2 = savepath1 + ".pcd"
 
     # %%
-        np.savetxt(savepath1,pp.pointscloud)
+        p = pcl.PointCloud(len(pp.pointscloud))
+        p.from_array(np.float32(pp.pointscloud))
+        if p.width != 0:
+            pcl.save(p,savepath2)
+            np.savetxt(savepath1,pp.pointscloud)
 
