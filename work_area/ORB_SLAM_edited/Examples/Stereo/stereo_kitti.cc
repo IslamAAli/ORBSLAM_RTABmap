@@ -128,6 +128,7 @@ int main(int argc, char **argv)
     SLAM.SaveTransformation("DS_keyFrameFransformations_RM.txt");
     SLAM.SaveTransformationInverse("DS_keyFrameFransformationsInv_RM.txt");
     SLAM.SaveFinalMap("DS_FinalMap.txt");
+    SLAM.SaveFinalMapDetailed("DS_FinalMapDetailed.txt");
 
     return 0;
 }
