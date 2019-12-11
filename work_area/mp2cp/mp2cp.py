@@ -1,6 +1,6 @@
 #%%
 '''
-To generate point clouds and the keyframe associated with them.
+To generate point clouds and the keyframe associated with them. Keep the depth.txt rgb.txt depth rgb folder in the same folder as this script.
 Command: python mp2cp.py --mappath='./DS_FinalMapDetailed.txt' --keyframepath='./DS_keyFrameTransformations_RM.txt' --savepath='./point_cloud/' --first_file='rgb.txt' --second_file='depth.txt'  
 '''
 
